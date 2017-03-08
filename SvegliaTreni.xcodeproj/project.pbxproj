@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F566A57C1E6F2C070026DA75 /* sound1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F566A57B1E6F2C070026DA75 /* sound1.mp3 */; };
+		F566A57E1E6FF2830026DA75 /* sound2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F566A57D1E6FF2830026DA75 /* sound2.mp3 */; };
 		F5A846AD1E6E1BD1008C7032 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A846AC1E6E1BD1008C7032 /* AppDelegate.swift */; };
 		F5A846AF1E6E1BD1008C7032 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A846AE1E6E1BD1008C7032 /* ViewController.swift */; };
 		F5A846B21E6E1BD1008C7032 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A846B01E6E1BD1008C7032 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		F566A57B1E6F2C070026DA75 /* sound1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound1.mp3; sourceTree = "<group>"; };
+		F566A57D1E6FF2830026DA75 /* sound2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound2.mp3; sourceTree = "<group>"; };
 		F5A846A91E6E1BD1008C7032 /* SvegliaTreni.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SvegliaTreni.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A846AC1E6E1BD1008C7032 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5A846AE1E6E1BD1008C7032 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				F5A846B51E6E1BD1008C7032 /* LaunchScreen.storyboard */,
 				F5A846B81E6E1BD1008C7032 /* Info.plist */,
 				F566A57B1E6F2C070026DA75 /* sound1.mp3 */,
+				F566A57D1E6FF2830026DA75 /* sound2.mp3 */,
 			);
 			path = SvegliaTreni;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F566A57C1E6F2C070026DA75 /* sound1.mp3 in Resources */,
+				F566A57E1E6FF2830026DA75 /* sound2.mp3 in Resources */,
 				F5A846B71E6E1BD1008C7032 /* LaunchScreen.storyboard in Resources */,
 				F5A846B41E6E1BD1008C7032 /* Assets.xcassets in Resources */,
 				F5A846B21E6E1BD1008C7032 /* Main.storyboard in Resources */,

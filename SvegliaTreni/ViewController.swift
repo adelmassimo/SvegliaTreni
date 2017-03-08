@@ -37,6 +37,7 @@ class ViewController: UIViewController {
         notification.alertBody = "Alert!"
         notification.alertAction = "open"
         notification.hasAction = true
+        notification.soundName = "sound2.mp3"
         notification.userInfo = ["UUID": "reminderID" ]
         UIApplication.sharedApplication().scheduleLocalNotification(notification)
     }
