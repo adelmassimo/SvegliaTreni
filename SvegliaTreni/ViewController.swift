@@ -14,15 +14,31 @@ class ViewController: UIViewController {
     var player: AVAudioPlayer?
     @IBOutlet var play: UIButton!
 
+    @IBAction func registerLocal(sender: AnyObject) {
+            }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        let notificationSettings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
+        UIApplication.sharedApplication().registerUserNotificationSettings(notificationSettings)
+
+        
+        
+        
         let now = NSDate()
         print(now)
         
         print(now.dateByAddingTimeInterval(NSTimeInterval(60)))
+        
+        let notification = UILocalNotification()
+        notification.fireDate = now.dateByAddingTimeInterval(NSTimeInterval(15))
+        notification.alertBody = "Alert!"
+        notification.alertAction = "open"
+        notification.hasAction = true
+        notification.userInfo = ["UUID": "reminderID" ]
+        UIApplication.sharedApplication().scheduleLocalNotification(notification)
     }
     
 
