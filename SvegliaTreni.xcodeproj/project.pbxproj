@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F566A57C1E6F2C070026DA75 /* sound1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F566A57B1E6F2C070026DA75 /* sound1.mp3 */; };
+		F51F59901E70310200EAC861 /* AddAllarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F598F1E70310200EAC861 /* AddAllarmViewController.swift */; };
+		F51F59921E70343B00EAC861 /* Allarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F59911E70343B00EAC861 /* Allarm.swift */; };
+		F51F59951E70377200EAC861 /* AllarmScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F59941E70377200EAC861 /* AllarmScheduler.swift */; };
+		F51F59971E70495000EAC861 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F51F59961E70495000EAC861 /* bg.png */; };
 		F566A57E1E6FF2830026DA75 /* sound2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F566A57D1E6FF2830026DA75 /* sound2.mp3 */; };
 		F5A846AD1E6E1BD1008C7032 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A846AC1E6E1BD1008C7032 /* AppDelegate.swift */; };
 		F5A846AF1E6E1BD1008C7032 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A846AE1E6E1BD1008C7032 /* ViewController.swift */; };
@@ -16,6 +19,8 @@
 		F5A846B71E6E1BD1008C7032 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A846B51E6E1BD1008C7032 /* LaunchScreen.storyboard */; };
 		F5A846C21E6E1BD1008C7032 /* SvegliaTreniTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A846C11E6E1BD1008C7032 /* SvegliaTreniTests.swift */; };
 		F5A846CD1E6E1BD1008C7032 /* SvegliaTreniUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A846CC1E6E1BD1008C7032 /* SvegliaTreniUITests.swift */; };
+		F5FC846A1E716C43008EFB23 /* tornadoSiren.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F5FC84691E716C43008EFB23 /* tornadoSiren.mp3 */; };
+		F5FC846C1E716D32008EFB23 /* SelectRingtoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FC846B1E716D32008EFB23 /* SelectRingtoneViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F566A57B1E6F2C070026DA75 /* sound1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound1.mp3; sourceTree = "<group>"; };
+		F51F598F1E70310200EAC861 /* AddAllarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAllarmViewController.swift; sourceTree = "<group>"; };
+		F51F59911E70343B00EAC861 /* Allarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Allarm.swift; sourceTree = "<group>"; };
+		F51F59941E70377200EAC861 /* AllarmScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllarmScheduler.swift; sourceTree = "<group>"; };
+		F51F59961E70495000EAC861 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		F566A57D1E6FF2830026DA75 /* sound2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound2.mp3; sourceTree = "<group>"; };
 		F5A846A91E6E1BD1008C7032 /* SvegliaTreni.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SvegliaTreni.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A846AC1E6E1BD1008C7032 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +59,8 @@
 		F5A846C81E6E1BD1008C7032 /* SvegliaTreniUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SvegliaTreniUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A846CC1E6E1BD1008C7032 /* SvegliaTreniUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SvegliaTreniUITests.swift; sourceTree = "<group>"; };
 		F5A846CE1E6E1BD1008C7032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5FC84691E716C43008EFB23 /* tornadoSiren.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tornadoSiren.mp3; sourceTree = "<group>"; };
+		F5FC846B1E716D32008EFB23 /* SelectRingtoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectRingtoneViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F51F59931E70375100EAC861 /* SupportClasses */ = {
+			isa = PBXGroup;
+			children = (
+				F51F59911E70343B00EAC861 /* Allarm.swift */,
+				F51F59941E70377200EAC861 /* AllarmScheduler.swift */,
+			);
+			name = SupportClasses;
+			sourceTree = "<group>";
+		};
 		F5A846A01E6E1BD1008C7032 = {
 			isa = PBXGroup;
 			children = (
@@ -101,13 +120,17 @@
 		F5A846AB1E6E1BD1008C7032 /* SvegliaTreni */ = {
 			isa = PBXGroup;
 			children = (
+				F51F59931E70375100EAC861 /* SupportClasses */,
 				F5A846AC1E6E1BD1008C7032 /* AppDelegate.swift */,
+				F51F598F1E70310200EAC861 /* AddAllarmViewController.swift */,
 				F5A846AE1E6E1BD1008C7032 /* ViewController.swift */,
 				F5A846B01E6E1BD1008C7032 /* Main.storyboard */,
+				F5FC846B1E716D32008EFB23 /* SelectRingtoneViewController.swift */,
 				F5A846B31E6E1BD1008C7032 /* Assets.xcassets */,
 				F5A846B51E6E1BD1008C7032 /* LaunchScreen.storyboard */,
 				F5A846B81E6E1BD1008C7032 /* Info.plist */,
-				F566A57B1E6F2C070026DA75 /* sound1.mp3 */,
+				F51F59961E70495000EAC861 /* bg.png */,
+				F5FC84691E716C43008EFB23 /* tornadoSiren.mp3 */,
 				F566A57D1E6FF2830026DA75 /* sound2.mp3 */,
 			);
 			path = SvegliaTreni;
@@ -199,13 +222,16 @@
 				TargetAttributes = {
 					F5A846A81E6E1BD1008C7032 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 					};
 					F5A846BC1E6E1BD1008C7032 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = F5A846A81E6E1BD1008C7032;
 					};
 					F5A846C71E6E1BD1008C7032 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = F5A846A81E6E1BD1008C7032;
 					};
 				};
@@ -235,8 +261,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F566A57C1E6F2C070026DA75 /* sound1.mp3 in Resources */,
+				F5FC846A1E716C43008EFB23 /* tornadoSiren.mp3 in Resources */,
 				F566A57E1E6FF2830026DA75 /* sound2.mp3 in Resources */,
+				F51F59971E70495000EAC861 /* bg.png in Resources */,
 				F5A846B71E6E1BD1008C7032 /* LaunchScreen.storyboard in Resources */,
 				F5A846B41E6E1BD1008C7032 /* Assets.xcassets in Resources */,
 				F5A846B21E6E1BD1008C7032 /* Main.storyboard in Resources */,
@@ -264,8 +291,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F51F59921E70343B00EAC861 /* Allarm.swift in Sources */,
+				F51F59901E70310200EAC861 /* AddAllarmViewController.swift in Sources */,
 				F5A846AF1E6E1BD1008C7032 /* ViewController.swift in Sources */,
 				F5A846AD1E6E1BD1008C7032 /* AppDelegate.swift in Sources */,
+				F5FC846C1E716D32008EFB23 /* SelectRingtoneViewController.swift in Sources */,
+				F51F59951E70377200EAC861 /* AllarmScheduler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,9 +441,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SvegliaTreni/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Adel.SvegliaTreni;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -421,9 +454,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SvegliaTreni/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Adel.SvegliaTreni;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -435,6 +470,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Adel.SvegliaTreniTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SvegliaTreni.app/SvegliaTreni";
 			};
 			name = Debug;
@@ -447,6 +483,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Adel.SvegliaTreniTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SvegliaTreni.app/SvegliaTreni";
 			};
 			name = Release;
@@ -458,6 +495,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Adel.SvegliaTreniUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = SvegliaTreni;
 			};
 			name = Debug;
@@ -469,6 +507,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Adel.SvegliaTreniUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = SvegliaTreni;
 			};
 			name = Release;

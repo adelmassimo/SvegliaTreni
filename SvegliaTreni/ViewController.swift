@@ -8,38 +8,44 @@
 
 import AVFoundation
 import UIKit
-import MediaPlayer
 
 class ViewController: UIViewController {
-    var player: AVAudioPlayer?
     @IBOutlet var play: UIButton!
 
-    @IBAction func registerLocal(sender: AnyObject) {
+    @IBAction func registerLocal(_ sender: AnyObject) {
             }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
-        let notificationSettings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
-        UIApplication.sharedApplication().registerUserNotificationSettings(notificationSettings)
-
-        
+        // ask permissions for notifications
+        let notificationSettings = UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
+        UIApplication.shared.registerUserNotificationSettings(notificationSettings)
         
         
-        let now = NSDate()
+        let defaults = UserDefaults.standard
+/*
+        let allarmScheduler = defaults.value(forKey: "allarmScheduler")
+        if allarmScheduler == nil{
+            let encodedData = NSKeyedArchiver.archivedData(withRootObject: AllarmScheduler())
+            defaults.setValue(encodedData, forKey: "allarmScheduler")
+            defaults.synchronize()
+            print("scheduler not found")
+        }
+ */
+        
+        let now = Date()
         print(now)
         
-        print(now.dateByAddingTimeInterval(NSTimeInterval(60)))
+        /*
+        defaults.setValue(now, forKey: "myDate");
         
-        let notification = UILocalNotification()
-        notification.fireDate = now.dateByAddingTimeInterval(NSTimeInterval(15))
-        notification.alertBody = "Alert!"
-        notification.alertAction = "open"
-        notification.hasAction = true
-        notification.soundName = "sound2.mp3"
-        notification.userInfo = ["UUID": "reminderID" ]
-        UIApplication.sharedApplication().scheduleLocalNotification(notification)
+        let gained = defaults.value(forKey: "myaDate")
+         */
+        let scheduler = AllarmScheduler()
+        scheduler.addAllarm(Allarm(et: now.addingTimeInterval(TimeInterval(5))))
+        scheduler.addAllarm(Allarm(et: now.addingTimeInterval(TimeInterval(60))))
+        scheduler.scheduleAll()
     }
     
 
@@ -48,33 +54,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func allarmButtonPressed(){
-        print(player?.playing.boolValue)
-        if (player?.playing.boolValue == false || player?.playing.boolValue == nil){
-            playSound("sound1")
-        }
-        else{
-            stopSound()
-        }
-    }
-    
-    func playSound(soundName : String) {
-        let url = NSBundle.mainBundle().URLForResource(soundName, withExtension: "mp3")!
-        
-        do {
-            player = try AVAudioPlayer(contentsOfURL: url)
-            guard let player = player else { return }
-            
-            player.prepareToPlay()
-            player.play()
-        } catch let error as NSError {
-            print(error.description)
-        }
-    }
-    
-    func stopSound() {
-        player?.stop()
-    }
+
+
 
 }
 
